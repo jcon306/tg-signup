@@ -1,0 +1,19 @@
+CSS
+
+body {
+  background-image: url('./Assets/TGbackground.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat-y;
+  width: auto;
+  height: 100vh;
+}
+
+
+/* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+@media (max-width: 768px) {
+  body {
+    background-size: cover; /* or use 'auto' for original size */
+    background-repeat: no-repeat;
+  }
+}
