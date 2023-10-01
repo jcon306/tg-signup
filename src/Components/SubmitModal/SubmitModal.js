@@ -43,20 +43,9 @@ const SubmitModal = ({ parentFirstName, parentEmail, childAges, numAdults, dietR
                 alert('Please fill out all the information fields.')
               } 
               else {
-                const info = `${numAdults} Adult(s), Child Ages: ${childAges} ${"\n"} Diet Restriction: ${dietRestriction} ${"\n"}
-                Special Requests: ${specialRequests}`
-                  
-                  // <ul>
-                  //   <li>{numAdults} Adults, Child ages: {childAges}</li>
-                  //   <li>Diet Restriction: {dietRestriction}</li>
-                  //   <li>Special Requests: {specialRequests}</li>
-                  // </ul>
-
-                // childNames.forEach((childName, index) => {
-                //   const childInfo = `${childName}, ${childGenders[index]}, ${childAges[index]} years old, Grade: ${childGrades[index]}`;
-                //   childrenInfo += `<p>${childInfo}</p>`;
-                // });
-
+                  let info = `<p>${numAdults} Adult(s), Child ages: ${childAges}</p>`
+                  info += `<p>Diet Restriction: ${dietRestriction} </p>`
+                  info += `<p>Special Requests: ${specialRequests}</p>`
                 const bodyData = {
                   "Sponsored": "Yes",
                   "Sponsor Email": sponsorEmail,
@@ -78,11 +67,11 @@ const SubmitModal = ({ parentFirstName, parentEmail, childAges, numAdults, dietR
                       const templateParams = {
                         sponsorEmail: sponsorEmail,
                         firstName: firstName,
-                        message: `Thank you for participating in our Adopt A Student Program!! You have chosen to sponsor 
-                            ${parentFirstName}'s family! <br /><br />${info} <br />`                           
+                        message: `Thank you for participating in our Thanksgiving Giving Program!! You have chosen to sponsor 
+                            ${parentFirstName}'s family! <br /><br />${info}<br />`                           
                     };
                     // emailjs.send('<YOUR_SERVICE_ID>','<YOUR_TEMPLATE_ID>', templateParams, '<YOUR_PUBLIC_KEY>')
-                    emailjs.send("service_7pz9wh6","template_gj7t0y6", templateParams, process.env.REACT_APP_EJ_API)
+                    emailjs.send("service_7pz9wh6","template_m4i0ujb", templateParams, process.env.REACT_APP_EJ_API)
 	                    .then((response) => {
 	                        console.log('SUCCESS!', response.status, response.text);
                           alert('Thank you! Your sign up was successful! Please check your inbox for a confirmation email. If you do not see it, please check your spam folder.')
