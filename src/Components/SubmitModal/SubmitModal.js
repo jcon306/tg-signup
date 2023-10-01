@@ -105,7 +105,7 @@ const SubmitModal = ({ parentFirstName, parentEmail, childAges, numAdults, dietR
     >
       <Modal.Dialog className="ModalDialog">
         <Modal.Header className="ModalHeader" closeButton>
-          <Modal.Title className="ModalTitle">Thanksgiving Giving</Modal.Title>
+          <Modal.Title className="ModalTitle">Thanksgiving Giving Sign Up</Modal.Title>
         </Modal.Header>
 
         <Modal.Body>
