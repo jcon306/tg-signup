@@ -1,0 +1,72 @@
+tr:first-of-type td {
+    padding-top: 10px;
+  }
+
+.submitBtn {
+    margin-right: 10px;
+    min-width: 80px;
+    cursor: pointer;   
+}
+
+.filled {
+    margin-right: 10%;
+   
+}
+
+.parentInfo {
+    margin-left: 5px;
+    width: 175px;
+}
+
+.childInfoLine {
+    font-size: 15px;
+    word-wrap: break-word;
+    font-size: 14px;
+    line-height: 1.2;
+} 
+
+.childName {
+    font-weight: bold;
+  }
+
+li + li {
+    margin-top: 10px;
+}
+
+@media (max-width: 767px) {
+    .parentInfo {
+      font-size: 1rem;
+      margin-left: 10px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .childInfoLine {
+      display: block;
+      font-size: 16px;
+    }
+    
+    li + li {
+      margin-top: 20px;
+    }
+   
+  }
+
+  @media (max-width: 280px) {
+    .parentInfo {
+      font-size: 12px;
+      margin-left: 7px;
+      width: 120px;
+    }
+    .childInfoLine {
+      display: block;
+      font-size: 10px;
+      line-height: 1;
+    }
+    
+    .submitBtn {
+      max-width: 5px;
+      margin-right: 5px;
+    }
+   
+  }
