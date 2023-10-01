@@ -2,7 +2,7 @@
     border: none;
 }
 .ModalHeader {
-    border: none;
+    text-decoration: underline;
 }
 
 .ModalBody {
