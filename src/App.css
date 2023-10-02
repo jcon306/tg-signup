@@ -47,7 +47,7 @@ label {
 .infoLabel {
   margin-right: 1%;
   color: white;
-  
+  font-size: 18px;
   text-shadow:
         0.07em 0 black,
         0 0.07em black,
@@ -107,7 +107,7 @@ label {
     margin-left: 10%;
   } 
   .infoOption {
-    margin-right: 5%;
+    margin-right: 15%;
   }
 }
 
@@ -187,14 +187,14 @@ label {
 }
 
 .infoOption {
-  margin-right: 20%;
+  margin-right: 15%;
   margin-bottom: 5px;
 }
 .genderLabel {
   margin-left: none;
 }
  .familySizeDropdown {
-  margin-right: 30%;
+  margin-right: 0;
  }
 
 }

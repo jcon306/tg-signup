@@ -36,8 +36,9 @@ const handleCheckChange = (e) => {
         </div>
 
         <div className='section sorting'>
-                        <label className='sortByLabel infoLabel'>Sort families by:</label>
-                        <label className='sizeLabel infoLabel'>Number of Adults</label>
+                        {/* <label className='sortByLabel infoLabel'>Sort families by:</label> */}
+                        {/* <br /> */}
+                        <label className='sizeLabel infoLabel'>Number of Adults: </label>
                           <select
                               onChange={handleNumAdultsChange}
                               className='familySizeDropdown infoOption'>
