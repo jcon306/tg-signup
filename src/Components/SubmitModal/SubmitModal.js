@@ -70,6 +70,7 @@ const SubmitModal = ({ parentFirstName, parentEmail, childAges, numAdults, dietR
                         message: `Thank you for participating in our Thanksgiving Giving Program!! You have chosen to sponsor 
                             ${parentFirstName}'s family! <br /><br />${info}`                           
                     };
+                    //Email Section ---------------
                     // emailjs.send('<YOUR_SERVICE_ID>','<YOUR_TEMPLATE_ID>', templateParams, '<YOUR_PUBLIC_KEY>')
                     emailjs.send("service_y7z7za8","template_m4i0ujb", templateParams, process.env.REACT_APP_EJ_API)
 	                    .then((response) => {
