@@ -36,7 +36,7 @@ const InfoComponent = ({ numAdultsFilter, hideFilter }) => {
                   <FamilyComponent
                     key={key}
                     parentFirstName={data["Client's First Name"]}
-                    parentEmail={data["Client Email"]}
+                    parentEmail={data["Client_Email"]}
                     sponsorEmail={data["Sponsor Email"]}
                     numAdults={numAdults}
                     childAges={childAges}
