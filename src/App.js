@@ -48,7 +48,9 @@ const handleCheckChange = (e) => {
                                   <option value='2'>2 Adults</option>
                                   <option value='3'>3 Adults</option>
                                   <option value='4'>4 Adults</option>
-                                  <option value='5+'>5 Adults</option>
+                                  <option value='5'>5 Adults</option>
+                                  <option value='6'>6 Adults</option>
+                                  <option value='7'>7 Adults</option>
                               </select>  
                          <label className='filledLabel infoLabel' htmlFor="unfilledOnly">Hide Filled Spots</label>
                         <input
