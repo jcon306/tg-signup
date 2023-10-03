@@ -69,19 +69,19 @@ const SubmitModal = ({ parentFirstName, parentEmail, childAges, numAdults, dietR
                         firstName: firstName,
                         message: `Thank you for participating in our Thanksgiving Giving Program!! You have chosen to sponsor 
                             ${parentFirstName}'s family! <br /><br />${info}`                           
-                    };
-                    //Email Section ---------------
-                    // emailjs.send('<YOUR_SERVICE_ID>','<YOUR_TEMPLATE_ID>', templateParams, '<YOUR_PUBLIC_KEY>')
-                    emailjs.send("service_y7z7za8","template_m4i0ujb", templateParams, "f4QkK2UAQEvlT5NpZ")
-	                    .then((response) => {
-	                        console.log('SUCCESS!', response.status, response.text);
-                          alert('Thank you! Your sign up was successful! Please check your inbox for a confirmation email. If you do not see it, please check your spam folder.')
-                          window.location.reload()
-	                      }, (err) => {
-	                        console.log('FAILED...', err);
-                          alert('Email failed to send. Please try again, or email Families for Families if the problem continues')
+                      };
+                      //Email Section ---------------
+                      // emailjs.send('<YOUR_SERVICE_ID>','<YOUR_TEMPLATE_ID>', templateParams, '<YOUR_PUBLIC_KEY>')
+                      emailjs.send("service_y7z7za8","template_m4i0ujb", templateParams, "f4QkK2UAQEvlT5NpZ")
+                        .then((response) => {
+                            console.log('SUCCESS!', response.status, response.text);
+                            alert('Thank you! Your sign up was successful! Please check your inbox for a confirmation email. If you do not see it, please check your spam folder.')
+                            window.location.reload()
+                          }, (err) => {
+                            console.log('FAILED...', err);
+                            alert('Email failed to send. Please try again, or email Families for Families if the problem continues')
 
-	                      });                     
+                          });                     
                     } else if (r.status !== 200) {
                       alert("There was a problem signing up");
                     }
