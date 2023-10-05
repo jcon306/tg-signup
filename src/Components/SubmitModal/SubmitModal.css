@@ -21,3 +21,7 @@
 .ModalFooter {
     border: none;
 }
+
+.footer-text {
+    font-size: 12px;
+}

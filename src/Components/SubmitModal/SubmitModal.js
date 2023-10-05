@@ -44,8 +44,12 @@ const SubmitModal = ({ parentFirstName, parentEmail, childAges, numAdults, dietR
               } 
               else {
                   let info = `<p>${numAdults} Adult(s), Child ages: ${childAges}</p>`
-                  info += `<p>Diet Restriction: ${dietRestriction} </p>`
+                  info += `<p>Dietary Restriction: ${dietRestriction} </p>`
                   info += `<p>Special Requests: ${specialRequests}</p>`
+                  info += `<p>Many sponsors have asked over the years if the families have any special
+                              requests or foods that make Thanksgiving special for them so we included a special 
+                              request option when they were signing up to receive a dinner. You are not obligated to include 
+                              it, but can if you would like to</p>`
                 const bodyData = {
                   "Sponsored": "Yes",
                   "Sponsor Email": sponsorEmail,
@@ -67,8 +71,8 @@ const SubmitModal = ({ parentFirstName, parentEmail, childAges, numAdults, dietR
                       const templateParams = {
                         sponsorEmail: sponsorEmail,
                         firstName: firstName,
-                        message: `Thank you for participating in our Thanksgiving Giving Program!! You have chosen to sponsor 
-                            ${parentFirstName}'s family! <br /><br />${info}`                           
+                        message: `Thank you for participating in our Thanksgiving Dinner Program!! You have chosen to sponsor 
+                            ${parentFirstName}'s family! Here is some information about the family: <br /><br />${info}`                           
                       };
                       //Email Section ---------------
                       // emailjs.send('<YOUR_SERVICE_ID>','<YOUR_TEMPLATE_ID>', templateParams, '<YOUR_PUBLIC_KEY>')
@@ -157,6 +161,10 @@ const SubmitModal = ({ parentFirstName, parentEmail, childAges, numAdults, dietR
                 <li>Diet Restriction: {dietRestriction}</li>
                 <li>Special Requests: {specialRequests}</li>
               </ul>
+              <p className="footer-text">(Many sponsors have asked over the years if the families have any special requests or foods that
+                 make Thanksgiving special for them so we included a special request option when they were signing 
+                 up to receive a dinner. You are not obligated to include it, but can if you would like to.)
+              </p>
             </Form.Group>
           <Modal.Footer className="ModelFooter">
             <Button variant="secondary" onClick={hideModel}>Close</Button>
